@@ -1,4 +1,5 @@
-<h1 align="center">🛡️ AI-Enhanced Cybersecurity Threat Detector</h1>
+<h1 align="center">🛡️ PacketWatch</h1>
+<h3 align="center">AI-Enhanced Cybersecurity Threat Detector</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -112,7 +113,7 @@ flowchart TD
 
 ## 📁 Folder Structure
 ```
-AI-ENHANCED-THREAT-DETECTION/
+PacketWatch/
 ├── backend/
 │   ├── feature_extraction.py   # Converts raw packets into a feature dictionary
 │   ├── realtime_detector.py    # Sniffs Wi-Fi interfaces and runs ML inference
@@ -153,8 +154,8 @@ You must install packet capture driver libraries depending on your Operating Sys
 Clone the repository and install the required libraries:
 ```bash
 # Clone the repository
-git clone https://github.com/Shafia-01/AI-ENHANCED-THREAT-DETECTION.git
-cd AI-ENHANCED-THREAT-DETECTION
+git clone https://github.com/Shafia-01/PacketWatch.git
+cd PacketWatch
 
 # Install dependencies
 pip install -r requirements.txt

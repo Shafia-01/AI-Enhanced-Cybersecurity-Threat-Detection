@@ -9,8 +9,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from backend.utils import preprocess_dataframe, make_prediction, model, scaler, imputer
 from backend.realtime_detector import sniff_packets_and_detect
 
-st.set_page_config(page_title="AI Cybersecurity Threat Detector", layout="wide")
-st.title("🛡️ AI-Enhanced Cybersecurity Threat Detector")
+st.set_page_config(page_title="PacketWatch", layout="wide")
+st.title("🛡️ PacketWatch")
+st.subheader("AI-Enhanced Cybersecurity Threat Detector")
 
 if any(x is None for x in [model, scaler, imputer]):
     st.error("❌ Model files not found. Please ensure all .pkl files exist in /models.")
