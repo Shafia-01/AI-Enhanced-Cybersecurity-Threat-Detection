@@ -105,7 +105,7 @@ flowchart TD
     Feature --> Result["Return Threat/Normal Verdict with Interface Info"]
 ```
 
-1. **Mode A (Offline)**: User uploads a CSV file of captured network logs -> The backend aligns and preprocesses features -> The model scores each record -> The user downloads the scored predictions as a CSV.
+1. **Mode A (Offline)**: User uploads a CSV file of captured network logs (a tiny pre-packaged dataset is provided at [sample_dataset2.csv](models/sample_dataset2.csv) for immediate testing) -> The backend aligns and preprocesses features -> The model scores each record -> The user downloads the scored predictions as a CSV.
 2. **Mode B (Live)**: User clicks "Start Live Detection" -> The tool sniffs Wi-Fi traffic on the auto-detected interface for 20 seconds -> Extracts flow statistics -> Returns a "Threat" or "Normal" verdict along with active network/interface information.
 
 ---
@@ -126,6 +126,7 @@ AI-ENHANCED-THREAT-DETECTION/
 │   ├── scaler.pkl                  # Fitted StandardScaler binary
 │   ├── imputer.pkl                 # Fitted SimpleImputer binary
 │   ├── feature_names.pkl           # List of features used during model training
+│   ├── sample_dataset2.csv         # Small sample dataset committed for quick testing
 │   └── train_model.py              # Script to train the model and save preprocessing pipelines
 ├── requirements.txt            # Project dependencies
 └── README.md                   # Project documentation
